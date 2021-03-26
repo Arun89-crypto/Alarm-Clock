@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift Alarm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./Images/clock.png" />
+</head>
+
+<body>
+    <div id="top">
+
+    </div>
+    <nav class="navbar">
+        <div class="left-nav">
+            <img src="./Images/clock.png" alt="" id="logo">
+            <img src="./Images/menu.png" alt="" id="toggle">
+        </div>
+        <div class="right-nav">
+            <ul class="nav-list">
+                <li class="listItem"><a href="#top">Home</a></li>
+                <li class="listItem"><a href="#clock">Alarm</a></li>
+                <li class="listItem"><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main" id="main">
+        <div class="left">
+            <h1>Swift Alarm</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores illum, quas aspernatur dolorem commodi
+                molestias beatae voluptatum fugiat, alias harum aperiam perferendis recusandae ratione pariatur sed
+                itaque omnis autem provident!</p>
+        </div>
+        <div class="right">
+            <img src="./Images/undraw_in_no_time_6igu.svg" alt="" id="main-img">
+        </div>
+    </div>
+    <div class="container" id="clock">
+        <div class="clock">
+            <h2 id="display"></h2>
+            <h2>hours : mins : secs</h2>
+        </div>
+        <div class="view">
+            <div class="adder">
+                <p style="color: #ff5a5f;">format = h/m/s</p>
+                <input type="number" placeholder="Enter the Hours" id="horas">
+                <input type="number" placeholder="Enter the Minutes" id="mins">
+                <input type="number" placeholder="Enter the Seconds" id="sec">
+                <button class="buttons" id="addBtn">Add</button>
+            </div>
+            <div class="displayTime">
+                <h2>Alarms Added</h2>
+                <p>All the added alarms will appear here &#9661;</p>
+                <ul class="list">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="right">
+            <img src="./Images/undraw_Hiking_re_k0bc.svg" alt="" id="about-img">
+        </div>
+        <div class="left">
+            <h1>About</h1>
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt quia, explicabo, magnam nemo
+                quaerat fuga delectus accusamus sapiente nulla dignissimos blanditiis non soluta asperiores, ducimus ab.
+                Deleniti a doloremque, aut doloribus illo vero aspernatur excepturi vitae quasi dolore consequuntur quod
+                aliquid ut et corporis quidem voluptates quam aperiam eius, blanditiis nemo sint temporibus? Veritatis,
+                officiis quae amet asperiores ipsa, sapiente reiciendis quos vitae omnis est sunt accusamus eligendi
+                quis?</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="left-foot">
+            <img src="./Images/logo.png" alt="" id="logo-foot">
+        </div>
+        <div class="right-foot">
+            <p>Made By Arun.89Creator</p>
+        </div>
+    </footer>
+    <div class="pauser" id="alarm-icon">
+        <p>Click To Pause</p>
+        <img src="./Images/alarm.png" alt="" onclick="stop()" width="60px">
+    </div>
+    <audio id="audio">
+        <source src="./iphone_alarm.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
